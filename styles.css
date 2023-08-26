@@ -1,0 +1,359 @@
+/* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Sora', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #232122;
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+ 
+
+nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover{
+    color: #559518;
+}
+
+.next, .prev {
+    width: 60px;
+    height: 60px;
+}
+
+.next img {
+    width: 40px;
+    height: 40px; 
+}
+
+.prev img {
+    width: 40px;
+    height: 40px; 
+}
+
+
+.hero {
+    text-align: center;
+    
+    
+}
+
+.hero img {
+    width: 60%; 
+    justify-content: center;
+}
+
+.hero p {
+    margin: 20px;
+}
+
+
+ 
+
+#inicio {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    justify-content: center;
+}
+
+#inicio img {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    justify-content: center;
+}
+
+#inicio p {
+    padding-top: 0;
+    padding-bottom: 5%;
+}
+.about,  .schedule, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre {
+    background-color: #232122;
+    color: #ffffff;
+    display: flex;
+}
+
+.about {
+    object-fit:cover;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    color: #FFFFFF;
+}
+
+.about div {
+    width:43%;
+}
+
+.about img {
+    width: 30%;
+    margin: 50px;
+    padding: 5%;
+
+}
+
+#integrantes {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+    color: #FFFFFF;
+    
+}
+
+#integrantes ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#integrantes img {
+    object-fit:contain;
+    width: 50%;
+    padding-left: 30px;
+    margin-right: 20px;
+    margin: 0;
+    
+}
+
+#integrantes div {
+    padding: 0;
+    margin: 0;
+}
+
+#integrantes h1 {
+    margin-bottom: 10px;
+}
+
+#integrantes li {
+    margin-top: 30px;
+    margin-bottom:30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+#slide{
+    height: auto;
+    max-width: 100%;
+    background-color: #232122;
+    display: flex;
+    flex-direction: Row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display:none;
+}
+
+.slideshow-container {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    width: 100%;  
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mySlides {
+    display: none;
+    width: 30%;  
+    height: auto;
+    object-fit:contain;
+    align-items: center;
+}
+
+#agenda {
+    display: flex;
+    background-color: #232122;
+    color: #FFFFFF;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+#agenda img {
+    width: 52.5%;
+    padding: 0;
+    margin: 0;
+}
+#agenda ul {
+    list-style: none;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.schedule p,h2,li {
+    padding: 20px;
+}
+
+#contato {
+    background-color: #1b1b1b; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#contato div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contato div .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contato h3 {
+    padding: 20px;
+    
+
+}
+
+.contact  ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contact div li{
+    flex-direction: row;
+    list-style: none;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    color: #FFFFFF;
+    height: 100%;
+    padding-top: 0;
+    list-style: none;
+}
+
+
+ 
+
+
+ 
+
+
+
+
+
+button {
+    background: none;
+    border: none;
+}
+
+
+footer {
+    display: flex;
+    height: 50px;
+    background-color: #232122;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Estilos específicos para dispositivos menores */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .about, .songs, .schedule, .contact {
+        padding: 1rem;
+    }
+
+    .about {
+        object-fit:cover;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        justify-content: space-around;
+        
+        align-items: center;
+    }
+
+}
